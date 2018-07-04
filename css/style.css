@@ -20,7 +20,7 @@ body {
 
 .wrap {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
 	url('../img/background.jpeg');
 	background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body {
 	padding-bottom: 2rem;
 }
 
-h1 {
+.main-heading {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: .4rem;
@@ -127,5 +127,42 @@ media
 ****************************/
 
 @media (min-width: 768px) {
-	
+	.form {
+		width: 70%;
+		margin-left: auto;
+	}
+	.main-heading {
+		margin-left: 20rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.form {
+		width: 50%;
+	}
+	.submit_button {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main-heading {
+		margin-left: 25rem;
+	}
+}
+
+@media (min-width: 1441px) {
+	.wrap {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.form {
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+		margin-top: -10rem;
+	}
+	.main-heading {
+		margin-top: auto;
+		margin-left: 0;
+	}
 }
